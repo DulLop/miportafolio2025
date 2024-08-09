@@ -1,0 +1,16 @@
+body{
+    background: black;
+}
+
+.content-menu{
+    background: red;
+}
+
+@media (min-width: 992px) {
+    .content-menu {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
