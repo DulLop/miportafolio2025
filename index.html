@@ -21,8 +21,12 @@
     <header class="header">
         <div class="container1">
             <nav class="menu-header">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <img src="/img/burguer-menu.svg" alt="burguer-menu">
+                </label>
                 <a href="/index.html">
-                    <img src="/img/logodul.png" alt="Logo">
+                    <img class="logo" src="/img/logodul.png" alt="Logo">
                 </a>
                 <ul class="container2">
                     <li><a href="/index.html">Home</a></li>
@@ -36,103 +40,123 @@
 
     <main>
 
-    <!--Sobre-mi-->
-        <section>
-            <div>
-                <div>
+<!--Sobre-mi-->
+        <section class="section-sobremi">
+            <div class="banda-container">
+            </div>
+            <div class="container-3">
+                <div class="mifoto">
+                </div>
+                <div class="box-texto">
                     <h5>Sobre mí</h5>
+                    <div class="title">
                     <h1>El Origen de la Creatividad</h1>
+                    <i>
+                        <img class="estrella-icon" src="/img/estrella_verde_icon.svg" alt="estrella"></i>
+                    </div>
                     <p>La clave para desbloquear todas las posibilidades 
                         radica en combinar creatividad y tecnología. En mi enfoque, 
                         cada diseño es una oportunidad para innovar, y cada línea 
                         de código es una puerta a nuevas funcionalidades. 
                         Mi objetivo es integrar estos elementos para ofrecer 
                         soluciones completas y eficaces.</p>
-                    <div>
-                        <a href="micurriculum.html"> Mi curriculum</a>
+                    <div class="buttom-cv">
+                        <a class="micv" href="micurriculum.html"> Mi curriculum</a>
                     </div>
-                </div>
-                <div>
-                    <a href="https://github.com/">Github</a>
-                    <a href="https://www.linkedin.com/in/dulce-loperena-78210078/">Linkedin</a>
-                    <a href="https://www.behance.net/dulceloperena">Behance</a>
-                </div>
-                <div>
-                    <img src="/img/mifoto.png" alt="Mi foto">
-                </div>
+                </div>      
             </div>
+            <div class="redes-buttom">
+                <a href="https://github.com/">Github</a>
+                <a href="https://www.linkedin.com/in/dulce-loperena-78210078/">Linkedin</a>
+                <a href="https://www.behance.net/dulceloperena">Behance</a>
+            </div> 
         </section>
     
     
-        <!--Mi portafolio-->
-        <section>
-            <div>
-                <h4>Portafolio</h4>
-                <h1>Conectando con la visión</h1>
-                <p>Desde el momento en que comencé mi carrera, entendí que el desarrollo y el diseño son campos infinitos, 
+<!--Mi portafolio-->
+
+        <section class="section-portafolio">
+            <div class="container-4">
+                <i class="ojos-icon">
+                    <img src="/img/ojos.svg" alt="ojos-icon">
+                </i>
+                <div class="container-texto-portafolio">
+                    <h5>Portafolio</h5>
+                    <h1>Conectando con la visión</h1>
+                    <p>Desde el momento en que comencé mi carrera, entendí que el desarrollo y el diseño son campos infinitos, 
                     llenos de oportunidades para la innovación.</p>
-                <div class="card">
-                   <div class="front">
-                    <h1>Programación</h1>
-                   </div>
-                   <div class="back"></div>
+                </div>
+                <div class="container-cards">
+                    <div class="card-1">
+                        <img src="/img/cards/card-ui.png" alt="card-ui">
+                    </div>
+                    <div class="card-2">
+                        <img src="/img/cards/card-back.png" alt="card-back">
+                    </div>
+                    <div class="card-3">
+                        <img src="/img/cards/card-front.png" alt="card-front">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--Mi correo-->
-        <section>
-            <div>
+<!--Mi correo-->
+
+        <section class="mi-correo">
+            <div class="container-5">
+                <i class="carita-icon">
+                    <img src="/img/carita.svg" alt="carita">
+                </i>
                 <h1>Navegando juntos hacia el futuro</h1>
-                <p>Si buscas crear algo único y funcional, ¡estoy aquí para ayudarte! Contáctame 
+                <p>Si buscas crear algo único y funcional ¡Estoy aquí para ayudarte! Contáctame 
                     y hagamos realidad tu visión.</p>
-                <a href="mailto:dulceloperena@gmail.com">dulceloperena@gmail.com</a> 
-                <div>
+                    <div class="buttom-correo">
+                        <a class="buttom-micorreo" href="mailto:dulceloperena@gmail.com" target="_blank"> dulceloperena@gmail.com</a>
+                    </div>
+            </div>
+        </section>
+
+<!--Tools-->
+        <section class="tools">
+            <div class="container-tools">
+            </div>
+        </section>
+
+<!--Footer-->
+        <section class="footer">
+            <div class="container-footer">
+                <div class="container-footerinfo">
+                    <img src="/img/logodul.png" alt="Logo_Dul">
+                    <p>dulceloperena@gmail.com <br>
+                        CDMX, México. <br>
+                        Tel: 5553209726</p>
+                </div>
+                <div class="container-footerlinks">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="/sobre_mi.html">Sobre mí</a>
+                            </li>
+                            <li>
+                                <a href="/portafolio.html">Portafolio</a>
+                            </li>
+                            <li>
+                                <a href="/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container-footericons">
                     <a href="https://github.com/" target="_blank"> <img src="/img/github_icon.png" alt=""><span></span></a>
                     <a href="https://www.linkedin.com/in/dulce-loperena-78210078/" target="_blank"> <img src="/img/linkedin_icon.png" alt=""><span></span></a>
                     <a href="https://www.behance.net/dulceloperena" target="_blank"> <img src="/img/behance_icon.png" alt=""><span></span></a>
                 </div>
-            </div>
-        </section>
-
-        <!--Tools-->
-        <section>
-            <div>
-                <img src="/img/tools.png" alt="Tools">
-            </div>
-        </section>
-
-        <!--Footer-->
-        <section id="Footer">
-            <div>
-                <img src="/img/logodul.png" alt="Logo_Dul">
-                <p>dulceloperena@gmail.com <br>
-                    CDMX, México. <br>
-                    Tel: 5553209726</p>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/sobre_mi.html">Sobre mí</a>
-                        </li>
-                        <li>
-                            <a href="/portafolio.html">Portafolio</a>
-                        </li>
-                        <li>
-                            <a href="/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <p>Todos los derechos reservados &#169 2024 | Dulce Loperena</p>
-            </div>
-            <div>
-                <a href="https://github.com/" target="_blank"> <img src="/img/github_icon.png" alt=""><span></span></a>
-                <a href="https://www.linkedin.com/in/dulce-loperena-78210078/" target="_blank"> <img src="/img/linkedin_icon.png" alt=""><span></span></a>
-                <a href="https://www.behance.net/dulceloperena" target="_blank"> <img src="/img/behance_icon.png" alt=""><span></span></a>
+            </div>    
+            <div class="copyright">
+                <p>Todos los derechos reservados &#169 2024 | Portaflio Dulce Loperena</p>
             </div>
         </section>
 
