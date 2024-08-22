@@ -2,13 +2,6 @@ body{
     background: white;
 }
 
-@media (max-width:390px) {
-    body{
-        background: white;
-        columns: 1;
-    }
-}
-
 /*Header*/
 
 .header{
@@ -16,11 +9,10 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    position: relative;
     padding-top: 2rem;
     padding-right: 3rem;
     padding-left: 3rem;
-    height: 100vh;
+    height: 800px;
     background-attachment: fixed;
 }
 
@@ -30,7 +22,7 @@ body{
     justify-content: space-between;
     padding-top: 1rem;
     padding-left: 1rem;
-    padding-right: 0rem;
+    padding-right: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -73,41 +65,58 @@ body{
     display: none;
 }
 
-@media (max-width:390px){
+@media screen and (max-width:430px){
     .header{
         background-image: url(/img/homeresponsive390px.jpg);
         background-repeat: no-repeat;
         background-position: top center;
-        background-size:auto;
-        position: relative;
+        background-size: contain;
         background-attachment: fixed;
-        height: 70vh;
+        width: auto;
+        height:680px;
         padding-top: 1rem;
         padding-right: 1rem;
         padding-left: 1rem;
+        margin-top: 0;
     }
     .logo{
         width: 130px;
     }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: relative;
+        gap: 1rem;
+        background: #000000;
+        
+    }
+
 }
 
 @media (max-width:1042px){
     .checkbtn{
-        display: block;
+        display: initial;
     }
 
-    .container2{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        transition: all .5s;
-        top: 80px;
-        left: -120%;
-        text-align: center;
+    #check:checked ~ .menu-header{
+        display: initial;
     }
 }
 
 /*Sobre-mi*/
+
+.banda-container{
+    background-image: url(/img/banda-desk.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
 
 .section-sobremi{
     background-image: url(/img/bg_sobremi.jpg);
@@ -117,7 +126,8 @@ body{
     width: auto;
 }
 
-@media (max-width:390px) {
+
+@media (max-width:430px) {
     .section-sobremi{
         display: block;
         background-image: url(/img/responsive/bg_sobremi-responsive.jpg);
@@ -126,27 +136,19 @@ body{
         height: auto;
         width: auto;
     }
-}
 
-.banda-container{
-    background-image: url(/img/banda-desk.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 80px;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
 
-@media (max-width:390px){
     .banda-container{
         background-image: url(/img/responsive/banda-responsive.jpg);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        width: 390px;
-        height: 65px;
-    }
+        width: 432px;
+        height: 100px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+}
+
 }
 
 .container-3{
@@ -269,7 +271,7 @@ p{
     #FF003D;
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .container-3{
         display:block;
     }
@@ -405,8 +407,6 @@ p{
     margin-right: auto;
 }
 
-
-
 .container-4{
     text-align: center;
     margin-left: auto;
@@ -458,7 +458,7 @@ p{
     box-shadow: 0px 0px 20px 10px #FF003D;
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .section-portafolio{
         display: flex;
         background-image: url(/img/responsive/bg_portafolio-responsive.png);
@@ -492,7 +492,7 @@ p{
         margin-left: auto;
         margin-right: auto;
         width: 320px;
-        align-content: center;
+        text-align: left;
         margin-bottom: 100px;
     }
     
@@ -585,7 +585,11 @@ p{
     margin-right: auto;
 }
 
-@media screen and (max-width:390px){
+.buttom-micorreo:hover{
+    background: #3200C3;
+}
+
+@media screen and (max-width:430px){
     .mi-correo{
         background-image: url(/img/responsive/bg_correo-responsive.jpg);
         background-repeat: repeat;
@@ -641,7 +645,7 @@ p{
     height: auto;
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:430px){
     .container-tools{
         background-image: url(/img/responsive/tools-responsive.jpg);
         background-size: contain;
@@ -716,7 +720,7 @@ p{
     margin-right: auto;
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:430px){
     .footer{
         background-image: url(/img/responsive/bg_footer-responsive.jpg);
         background-size: cover;
